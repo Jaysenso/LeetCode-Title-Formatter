@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>LeetCode Name Formatter</title>
+  </head>
+  <body>
+    <div id="title">LeetCode Name Formatter</div>
+    <div id="mainContainer">
+      <form id="formatterForm">
+        <input
+          type="text"
+          id="userInput"
+          name="userInput"
+          placeholder="LeetCode Title"
+          required
+        />
+        <div class="dropdown">
+          <select id="languageSelector">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+        <input type="submit" value="Submit" onsubmit="return generateTitle()" />
+      </form>
+    </div>
+    <div id="resultContainer">
+      <div id="resultlabel">result : <span id="resultText"></span></div>
+    </div>
+  </body>
+
+  <script type="module" src="script.js"></script>
+</html>
