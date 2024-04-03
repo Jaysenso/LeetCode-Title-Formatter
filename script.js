@@ -10,6 +10,7 @@ const languageDict = {
   Java: "java",
   Python: "py",
   C: "c",
+  SQL: "sql",
 };
 
 form.addEventListener("submit", function (event) {
